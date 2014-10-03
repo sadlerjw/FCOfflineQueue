@@ -143,6 +143,7 @@
             }
         } else {
             [self setSuspended:YES];
+            [self _enqueueOperationForID:rowID opcode:opcode userInfo:userInfo highPriority:highPriority];
         }
     };
     [self addOperation:op];
