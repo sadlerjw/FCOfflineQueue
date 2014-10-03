@@ -152,7 +152,7 @@
 {
     if ([self isSuspended] == b) return;
     
-    if (! b) {
+    if (b) {
         [super setSuspended:b];
     } else {
         // Resume
